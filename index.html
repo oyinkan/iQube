@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>iQube</title>
+  <base target="_self">
+  <meta name="description" content="iQube"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--stylesheets / link tags loaded here-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/smallerscreen.css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section class="purchase-wrapper">
+      <h1>Complete your Purchase</h1>
+      <div>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#personal-info">Personal Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#billing-info">Billing Info</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#confirm-payment">Confirm Payment</a>
+          </li>
+        </ul>
+        <!-- Tab panes -->
+        <form>
+          <div class="tab-content">
+            <div id="personal-info" class="tab-pane active"><br>
+              <div class="form-group mb-5 pb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Opara Linus Ahmed"> 
+              </div>
+              <div class="form-group mb-5 pb-3">
+                <label for="emailaddress">Email Address <span>*</span></label>
+                <p>The purchase receipt would be sent to this address</p>
+                <input type="text" class="form-control" id="emailaddress" placeholder="OparaLinusAhmed@devmail.com"> 
+              </div>
+              <div class="form-group mb-5 pb-3">
+                <label for="address-one">Address 1</label>
+                <input type="text" class="form-control" id="address-one" placeholder="The address of the user goes here"> 
+              </div>
+              <div class="form-group mb-5 pb-5">
+                <label for="address-two">Address 2</label>
+                <input type="text" class="form-control" id="address-two" placeholder="and here"> 
+              </div>
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="form-group mb-5 pb-5">
+                    <label for="local-govt">Local Government</label>
+                    <input type="text" class="form-control" id="local-govt" placeholder="Surulere"> 
+                  </div>
+                </div>
+                <div class="col-lg-5">
+                  <div class="form-group mb-5 pb-3">
+                    <label for="state">State</label>
+                    <select class="form-control">
+                      <option value="lagos">Lagos</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <button type="submit" class="btn btn-primary btn-next">Next</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-info">Cancel Payment</button>
+                </div>
+              </div>
+            </div>
+            <div id="billing-info" class="tab-pane fade">
+              <div class="form-group mb-5 pb-3">
+                <label for="nameoncard">Name on Card <span>*</span></label>
+                <input type="text" class="form-control" id="nameoncard" placeholder="Opara Linus Ahmed"> 
+              </div>
+              <div class="form-group mb-5 pb-3">
+                <label for="card-type">Card Type <span>*</span></label>
+                <select class="form-control">
+                  <option value="visa">Visa</option>
+                  <option value="verve">Verve</option>
+                  <option value="mastercard">Mastercard</option>
+                </select>
+              </div>
+              <div class="row">
+                <div class="col-lg-7">
+                  <div class="form-group mb-5 pb-5">
+                    <label for="card-details">Card details <span>*</span></label>
+                    <input type="text" class="form-control" id="card-details" placeholder="44960 44960 44960 44960"> 
+                  </div>
+                </div>
+                <div class="col-lg-3">
+                  <div class="form-group mb-5 pb-5">
+                    <label for="expiry-date">Expiry date <span>*</span></label>
+                    <input type="text" class="form-control" id="expiry-date" placeholder="04 / 23"> 
+                  </div>
+                </div>
+                <div class="col-lg-2">
+                  <div class="form-group mb-5 pb-5">
+                    <label for="cvv">CVV <span>*</span></label>
+                    <input type="text" class="form-control" id="cvv" placeholder="923"> 
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <button type="submit" class="btn btn-primary btn-next">Next</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-info">Cancel Payment</button>
+                </div>
+              </div>
+            </div>
+            <div id="confirm-payment" class="tab-pane fade"><br>
+              <div class="card mb-5 pb-5">
+                <div class="card-header">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <p>Item Name</p>
+                    </div>
+                    <div>
+                      <p>&#8358;  Price</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <p>Data science and usability</p>
+                    </div>
+                    <div>
+                      <p><b>50,000.00</b></p>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <div>
+                      <p>Shipping</p>
+                    </div>
+                    <div>
+                      <p><b>0.00</b></p>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between total">
+                    <div>
+                      <p>Total</p>
+                    </div>
+                    <div>
+                      <p><b>50,000.00</b></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <button type="submit" class="btn btn-primary btn-next">Pay</button>
+                </div>
+                <div>
+                  <button type="button" class="btn btn-info">Cancel Payment</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <!--scripts loaded here-->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</body>
+
+</html>

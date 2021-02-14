@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Product Sans Regular';
+  src: url("../fonts/ProductSansRegular.ttf") format("opentype");
+}
+@font-face {
+  font-family: 'Product Sans Bold';
+  src: url("../fonts/ProductSansBold.ttf") format("opentype");
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Product Sans Regular', sans-serif!important;
+  background-image: linear-gradient(to bottom, #fdf1db, #fdf1db 49%, #fff 49%);
+  background-repeat: no-repeat;
+}
+p {
+  font-size: 1.6rem;
+}
+.purchase-wrapper {
+  width: 55%;
+  margin: auto;
+  padding: 17rem 0 10rem 6rem;
+}
+.purchase-wrapper h1 {
+  font-family: 'Product Sans Bold', sans-serif!important;
+  color: #4e5a8c;
+  font-size: 3.4rem;
+  line-height: 5rem;
+  font-weight: bold;
+  margin-bottom: 4.5rem;
+}
+.purchase-wrapper .nav-tabs {
+  border-bottom: 1px solid #000;
+}
+.purchase-wrapper .nav-tabs .nav-link {
+  font-family: 'Product Sans Bold', sans-serif!important;
+  border: 0;
+  color: #bdbdbd;
+  font-weight: bold;
+  font-size: 2.2rem;
+  padding-left: 0;
+  padding-right: 8rem;
+  padding-bottom: 2rem;
+  background: transparent;
+}
+.purchase-wrapper .nav-tabs .nav-link.active {
+  color: #f2994a;
+  border-bottom: 10px solid #f2994a;
+}
+.purchase-wrapper form {
+  padding-top: 5rem;
+}
+label {
+  font-family: 'Product Sans Bold', sans-serif!important;
+  color: #000;
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+label span {
+  color: red;
+}
+.form-control {
+  border: 1px solid #4e5a8c;
+  height: 6rem;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  padding: 0 2rem;
+}
+.form-control:focus {
+  border: 1px solid #219653;
+}
+.form-group p {
+  color: #8581a0;
+  margin-bottom: 2.5rem;
+}
+select.form-control:not([size]):not([multiple]) {
+  height: 6rem;
+}
+.btn.btn-info,
+.btn.btn-primary {
+  border: 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn.btn-primary.btn-next {
+  background: #f2b24b;
+  border-radius: 10px;
+  padding: 1.5rem 9rem;
+}
+.btn.btn-info {
+  background: transparent;
+  color: #4e5a8c;
+  padding: 1.5rem 6.5rem;
+}
+.btn.btn-info:focus,
+.btn.btn-primary:focus {
+  box-shadow: none;
+}
+.btn.btn-primary:focus {
+  background: #000;
+}
+.btn.btn-primary:hover {
+  background: #4e5a8c;
+}
+.card {
+  border: 0;
+}
+.card-header:first-child {
+  border-radius: 0;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.card-header,
+.card-body {
+  padding-left: 7rem;
+  padding-right: 7rem;
+}
+.card-header {
+  background: #2f80ed;
+  color: #fff;
+  padding-top: 20px;
+  border: 0;
+  font-weight: bold;
+}
+.card p {
+  font-size: 18px;
+}
+.card-header p {
+  padding-bottom: 7px;
+}
+.card-body {
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 6rem 7rem 4rem 7rem;
+  margin-top: -1rem;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.card-body p {
+  color: #4e5a8c;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+.card hr {
+  border: 1px solid #908eaa;
+  position: relative;
+  top: -15px;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+}
+.card-body .total {
+  border: 1px solid #c0bfce;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 6px;
+}
+.card-body .total p {
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}

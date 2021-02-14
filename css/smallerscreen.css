@@ -1,0 +1,30 @@
+@media screen and (max-width: 650px) {
+    .d-flex {
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-tabs,
+    .d-flex {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .purchase-wrapper {
+        width: 75%;
+        padding-left: 0;
+    }
+    .purchase-wrapper .nav-tabs .nav-link {
+        padding-right: 5rem;
+    }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1300px) {
+    .purchase-wrapper {
+        width: 60%;
+    }
+    .purchase-wrapper .nav-tabs .nav-link {
+        padding-right: 6.5rem;
+    }
+}
